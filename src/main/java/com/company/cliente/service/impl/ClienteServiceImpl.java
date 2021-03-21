@@ -25,4 +25,9 @@ public class ClienteServiceImpl implements ClienteService {
     public List<Cliente> listar(){
         return repository.findAll();
     }
+
+    @Override
+    public void apagar(Long id){
+        repository.deleteById(id);
+    }
 }

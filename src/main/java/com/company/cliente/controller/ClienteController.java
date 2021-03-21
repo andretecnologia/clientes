@@ -18,12 +18,18 @@ public class ClienteController {
     }
 
     @PostMapping
-    public Cliente salvar(@RequestBody ClienteDTO dto){
+    public Cliente salvar(@RequestBody ClienteDTO dto) {
         return service.salvar(new Cliente(dto.getNome()));
     }
 
     @GetMapping
-    public List<Cliente> listar(){
+    public List<Cliente> listar() {
         return service.listar();
+    }
+
+    @DeleteMapping("/{id}")
+    public void apagar(@PathVariable String id) {
+        Long codigo = Long.parseLong(id);
+        service.apagar(codigo);
     }
 }
