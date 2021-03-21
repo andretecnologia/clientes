@@ -20,9 +20,9 @@
             **/dto/**,
             **/ClienteApplication*
         </sonar.exclusions>
-        <sonar.projectKey>andretecnologia_simple-repo</sonar.projectKey>
-        <sonar.organization>andretecnologia</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.projectKey>andretecnologia_clientes</sonar.projectKey>
+		<sonar.organization>andretecnologia</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
